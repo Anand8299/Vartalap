@@ -1,12 +1,13 @@
 window.onload = function() {
-  var firebaseConfig = {
-      apiKey: "AIzaSyD-FmcQp8a89AoD5RhKh6Knfq17NaUXmPY",
-      authDomain: "vartalap-d6d2e.firebaseapp.com",
-      projectId: "vartalap-d6d2e",
-      storageBucket: "vartalap-d6d2e.appspot.com",
-      messagingSenderId: "605887287819",
-      appId: "1:605887287819:web:e947752180e728736b2d0e"
-    }; 
+const firebaseConfig = {
+  apiKey: "AIzaSyBwVQ7oY4NI_9KEuTil445IVpJ0EmOjVXg",
+  authDomain: "vartalap-629c6.firebaseapp.com",
+  projectId: "vartalap-629c6",
+  storageBucket: "vartalap-629c6.appspot.com",
+  messagingSenderId: "932694628986",
+  appId: "1:932694628986:web:3010916a85861445eb39c3",
+  measurementId: "G-9VNPM6Q6FL"
+};
   firebase.initializeApp(firebaseConfig);
   var db = firebase.database()
   class MEME_CHAT{
@@ -27,7 +28,7 @@ window.onload = function() {
 
       var title = document.createElement('h1')
       title.setAttribute('id', 'title')
-      title.textContent = 'VARTALAP'
+      title.textContent = 'Web Chat App'
 
       title_inner_container.append(title)
       title_container.append(title_inner_container)
@@ -54,7 +55,7 @@ window.onload = function() {
       var join_input = document.createElement('input')
       join_input.setAttribute('id', 'join_input')
       join_input.setAttribute('maxlength', 15)
-      join_input.placeholder = 'Enter Your Name'
+      join_input.placeholder = 'Enter User Name'
       join_input.onkeyup  = function(){
         if(join_input.value.length > 0){
           join_button.classList.add('enabled')
