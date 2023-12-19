@@ -275,4 +275,4 @@ const firebaseConfig = {
     app.chat()
   }
   
-}
+} 
